@@ -1,0 +1,194 @@
+body {
+	background: url(../images/1.jpg) #1c0c1f center 0 no-repeat fixed;
+	margin: 0;
+	padding: 0;
+	padding-top: 40px;
+}
+.hide { display: none; }
+.top {
+	position: fixed;;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	z-index: 99;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	background: #001e3b;
+}
+.header {
+	width: 960px;
+	height: 200px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.2);
+}
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+.scrubber {
+	width: 48px;
+	min-height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 999;
+	/*background: rgba(255, 255, 255, 0.2);*/
+}
+.scrubber a{
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	padding-right: 5px;
+	border-right: 2px solid #c8c8c8;
+	border-right-color: rgba(200, 200, 200, .5);
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	text-align: right;
+	color: #a5a5a5;
+}
+.scrubber a:hover {text-decoration: underline;}
+.scrubber a.current:hover {text-decoration: none;}
+.scrubber a.current {
+	border-right-color: #7ebad0;
+	color: #7ebad0;
+	font-weight: bold;
+}
+.content {
+	position: relative;
+	min-height: 1000px;
+	padding-top: 50px;
+	padding-left: 160px;
+	background: url(../images/spine.png) repeat-y 120px 0;
+}
+.content .first { margin-top: -20px;}
+.content_year, .content_month {
+	position: relative;
+	left: -90px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	color: #a5a5a5;
+	clear: both;
+}
+.content_item {
+	position: relative;
+	width: 370px;
+	min-height: 300px;
+	margin: 25px 30px 0 0;
+	background: #fff;
+	border-radius: 4px;
+	color: #888;
+}
+.content_item_left { float: left;}
+.content_item_right { float: right;}
+.content_item_icon_arrow { /*css三角形*/
+	position: absolute;
+	left: -10px;
+	top: 20px;
+	height: 0;
+	border-color: transparent #fff transparent transparent;
+	border-width: 10px 10px 10px 0;
+	border-style: dashed solid dashed dashed;
+}
+.content_item_icon_dot {  /*css圆点*/
+	position: absolute;
+	top: 25px;
+	left: -44px;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #fff;
+}
+.content_item_right .content_item_icon_dot { left: -444px;}  /*右列的圆点重新设置偏移*/
+.content_item_icon_dot_child {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	background: #b3dae9;
+}
+.content_item_head {
+	padding:15px;
+	padding-bottom: 0;
+}
+.content_item_head_title {
+	position: relative;
+	height: 46px;
+	line-height: 46px;
+	font-size: 28px;
+	padding: 0 0 10px 56px;
+}
+.content_item_head_title_lunar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 46px;
+	height: 46px;
+	border-radius: 8px;
+	background: #b3dae9;
+	font-size: 25px;
+	line-height: 23px;
+	overflow: hidden;
+	color: #fff;
+}
+.content_item_head_intro {
+	padding: 0 15px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 22px;
+
+}
+.content_item_media {
+	//height: 277px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.content_item_footer {
+	padding: 10px 15px;
+	margin:0 15px;
+	border-top: 1px solid #d6d6d6;
+	font-size: 12px;
+	line-height: 20px;
+	color: #b2b2b2;
+}
+.content_item_footer_info a {
+	display: inline-block;
+	height: 20px;
+	padding-right: 10px;
+	text-decoration: none;
+	color: #b2b2b2;
+}
+.content_item_footer_like { padding-top: 5px;}
+
+.icon_zan, .icon_pin {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-image: url(../images/timeline.png);
+	margin-left: 5px;
+	vertical-align: bottom;
+}
+.icon_zan { background-position: -883px -21px;}
+.icon_pin { background-position: -897px -42px;}
+
+.ui_icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-image: url(../images/timeline.png);
+	margin-left: 5px;
+	vertical-align: bottom;
+}
+.quote_after {background-position: -986px -102px;}
+.quote_before {background-position: -986px -85px}
